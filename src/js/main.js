@@ -2,8 +2,8 @@
 import 'mdn-polyfills/NodeList.prototype.forEach';
 
 // Bundle Config
-import '../../.modernizrrc';
-import './libs/modernizr-custom-tests';
+// import '../../.modernizrrc';
+// import './libs/modernizr-custom-tests';
 import '../styles/main.scss';
 
 import styleVariables from 'sass-extract-loader!../styles/settings/_settings.scss';
