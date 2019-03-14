@@ -1,0 +1,19 @@
+{% extends "layouts/l00-preview/l00-preview.njk" %}
+
+{% import "modules/m02-accordion/m02-accordion.njk" as accordion %}
+
+{% set variantName = "Variant 4" %}
+{% set variantDescr = "test module 4" %}
+
+{% macro main() %}
+    {% call accordion.main(basePath = basePath, classes = ['m-accordion'], labelContent = accordion.accordionLabel(
+          basePath = basePath,
+          label = "Accordion Variant 4"
+    )) %}
+      <p>other content 4.</p>
+    {% endcall %}
+{% endmacro %}
+
+{% block preview %}
+  {{ main() }}
+{% endblock %}
